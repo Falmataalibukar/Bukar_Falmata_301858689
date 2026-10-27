@@ -115,10 +115,15 @@ The Booking Rooms table uses a composite primary key consisting booking_id and r
 The Hotel Reservation System uses database constraints to maintain data integrity and prevent invalid records.
 
 Primary Key Constraint: Each table has a primary key that uniquely identifies its records. The Booking Rooms table uses a composite primary key consisting of booking_id and room_id.
+
 Foreign Key Constraint: Foreign keys connect related tables and ensure that referenced records exist. For example, the bookings table references the guests table through guest_id.
+
 UNIQUE Constraint: Unique constraints prevent duplicate values in important fields. Examples include guest email addresses, room numbers, room type names, staff email addresses, and service names.
+
 NOT NULL Constraint: Required fields must contain values. For example, guest names, room numbers, booking dates, and room prices are required when creating the relevant records.
+
 DEFAULT Constraint: Default values are provided for certain fields. For example, new bookings have a default status of Pending, while rooms have a default status of Available.
+
 CHECK Constraint: The bookings table includes a check constraint requiring the check-out date to be later than the check-in date.
 
 These constraints improve the reliability of the database by enforcing rules at the database level rather than relying only on users or application software.
@@ -128,8 +133,11 @@ These constraints improve the reliability of the database by enforcing rules at 
 Database normalisation is the process of organising data into related tables to reduce duplication and improve data integrity. The Hotel Reservation System is designed using the principles of First Normal Form (1NF), Second Normal Form (2NF), and Third Normal Form (3NF).
 
 First Normal Form (1NF): Each table stores individual values in its fields, and each record can be uniquely identified by a primary key. For example, guest names and contact details are stored in separate columns in the Guests table.
+
 Second Normal Form (2NF): The database tables satisfy 1NF, and non-key attributes depend on the whole primary key. The Booking Rooms table uses a composite primary key consisting of booking_id and room_id, while nightly_rate describes the rate for that booking-room combination.
+
 Third Normal Form (3NF): The database is designed to avoid storing non-key information that depends on other non-key attributes. For example, room type descriptions and standard prices are stored in the Room Types table rather than being repeated in every room record. Guest information is also stored separately from booking information.
+
 The separation of guests, bookings, rooms, room types, payments, and services reduces redundant data and makes updates easier to manage. This design helps prevent insertion, update, and deletion anomalies while maintaining consistency through primary keys, foreign keys, and other constraints.
 
 1.8 Relational Schema
@@ -284,7 +292,7 @@ Amina Bello
 
 Guest Email
 
-aminabello@example.coml
+aminabello@example.com
 
 
 Booking Rooms
@@ -311,6 +319,7 @@ Nightly Rate
 
 The Booking Rooms table uses a composite primary key consisting of Booking ID and Room ID. The nightly rate depends on the specific booking-room combination.
 Separating booking information from room assignments reduces repeated data and helps satisfy 2NF. Further separation of details that depend on other non-key attributes is used to achieve Third Normal Form (3NF).
+
 Third Normal Form (3NF)
 To achieve Third Normal Form, a table must satisfy 2NF and must not contain transitive dependencies. This means that non-key attributes should depend on the primary key, the whole primary key, and nothing but the primary key.
 In the Hotel Reservation System, room type details should be stored separately from individual room records. Similarly, guest details should be stored separately from booking records, and service descriptions and prices should be stored separately from service charges.
