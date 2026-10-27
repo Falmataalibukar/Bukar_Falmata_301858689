@@ -15,24 +15,39 @@ The purpose of this portfolio is to design, implement, test, and evaluate a data
 The Hotel Reservation System must meet the following requirements:
 
 Guests Management: The system must store guest details, including names, email addresses, phone numbers.
+
 Room Management: The system must store room numbers, room types, price per night, capacity, and room availability status.
+
 Booking Management: The system must record reservations, including guest details, check-in dates, check-out dates, and booking status.
+
 Room Assignment: The system must link each booking to one or more rooms and record the agreed nightly rate.
+
 Payment Management: The system must record payment amounts, payment dates, payment method, and payment status.
+
 Service Management: The system must record additional services offered by the hotel, such as breakfast, laundry, and airport pickup.
+
 Reporting: The system must support queries that show booking details, calculate accommodation costs, list available rooms, and summarise payments.  
 
 1.3 Identification of Database Entities
 
 The Hotel Reservation System consists of nine main entities. Each entity stores information about a specific part of the hotel’s operations.
+
 Guests: Stores guests information, including names, email addresses, and phone numbers.
+
 Room Types: Stores room categories, descriptions, price per night, and maximum capacity.
+
 Rooms: Stores individual room number, floors, room types, and availability status.
+
 Bookings: Stores reservation details, including the guest making the booking, check-in date, check-out date, and booking status.
+
 Booking rooms: Connects bookings to rooms and records the nightly rate charged for each assigned room.
+
 Payments: Stores payment amount, dates, methods, and payment status for bookings.
+
 Staff: Stores hotel employee information, including names, contact details, job titles, and hire dates.
+
 Services: Stores additional hotel services such as breakfast, laundry, and airport pickup.
+
 Service Charges: Records the additional services associated with bookings, including quantities and charge dates.
 
 These entities are related through primary keys and foreign keys to maintain referential integrity and reduce unnecessary duplication of data.
