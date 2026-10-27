@@ -134,25 +134,44 @@ The separation of guests, bookings, rooms, room types, payments, and services re
 
 1.8 Relational Schema
 
-Guests
+Guests:
+
 Guests(guest_id PK, first_name, last_name, email UNIQUE, phone, created_at).
-Room Types
+
+Room Types:
+
 Room_Types(room_type_id PK, type_name UNIQUE, description, price_per_night, capacity).
-Rooms
+
+Rooms:
+
 Rooms(room_id PK, room_number UNIQUE, room_type_id FK → Room_Types.room_type_id, floor_number, room_status).
-Bookings
+
+Bookings:
+
 Bookings(booking_id PK, guest_id FK → Guests.guest_id, check_in, check_out, booking_status, booking_date).
-Booking Rooms
+
+Booking Rooms:
+
 Booking_Rooms(booking_id PK, FK → Bookings.booking_id, room_id PK, FK → Rooms.room_id, nightly_rate).
+
 Note: booking_id and room_id together form a composite primary key.
-Payments
+
+Payments:
+
 Payments(payment_id PK, booking_id FK → Bookings.booking_id, amount, payment_date, payment_method, payment_status).
-Staff
+
+Staff:
+
 Staff(staff_id PK, first_name, last_name, email UNIQUE, job_title, phone, hire_date).
-Services
+
+Services:
+
 Services(service_id PK, service_name UNIQUE, description, service_price).
-Service Charges
+
+Service Charges:
+
 Service_Charges(charge_id PK, booking_id FK → Bookings.booking_id, service_id FK → Services.service_id, quantity, charge_date).
+
 
 1.9 Normalisation Example: UNF to 3NF
 Unnormalised Form (UNF)
