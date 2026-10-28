@@ -2,7 +2,7 @@ PORTFOLIO 2: QUERY PROCESSING AND OPTIMISATION
 
 2.2 SQL Queries and Their Purpose
 
-Several SQL queries were developed and tested using the Hotel Reservation System database. These queries demonstrate how data can be retrieved from multiple related tables, how booking costs can be calculated, and how payment information can be summarised.
+Crescent View Hotel is a simulated hotel business used as the case study for this portfolio. It's a Hotel Reservation System that stores guest information, room details, bookings, and payment records. This activity focuses on SQL queries and query optimisation to retrieve booking details, calculate booking costs, summarise payments, list guest bookings, and identify available rooms efficiently.
 
 2.2.1 Booking Details Query
 
