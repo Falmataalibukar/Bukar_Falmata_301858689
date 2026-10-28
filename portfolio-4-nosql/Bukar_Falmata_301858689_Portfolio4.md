@@ -2,7 +2,7 @@ PORTFOLIO 4: NOSQL AND ADVANCED DATA MODELS
 
 4.1 Introduction
 
-This portfolio explores the use of a NoSQL database in the Hotel Reservation System. MongoDB was selected because it stores data in flexible, document-based structures. MongoDB Compass was used to connect to the MongoDB server and manage the database.
+Crescent View Hotel is a simulated hotel business selected as the case study for this portfolio. It's a Hotel Reservation System that manages guest information, room details, bookings, and payment records. This activity demonstrates how MongoDB, a NoSQL database, can store hotel information as flexible documents. The implementation uses a database named hotel_reservation_system with guests and bookings collections, allowing guest and booking records to be created, stored, and inspected using MongoDB Compass.
 
 The implementation demonstrates how guest and booking information can be stored and retrieved using MongoDB. It also compares the NoSQL approach with the relational database implemented in MySQL.
 
