@@ -2,7 +2,7 @@ PORTFOLIO 3: TRANSACTIONS AND CONCURRENCY
 
 3.1 Introduction
 
-Database transactions are sequences of operations treated as a single unit of work. They help maintain data accuracy and consistency in the Hotel Reservation System. This portfolio demonstrates transaction processing using ‘COMMIT’ and ‘ROLLBACK’, and explains how concurrency control helps prevent conflicts when multiple users access the database simultaneously.
+Crescent View Hotel is a simulated hotel business selected as the case study for this portfolio. It's a Hotel Reservation System that manages guest information, room records, bookings, and payments. Database transactions help maintain data accuracy and consistency in the system. This portfolio demonstrates transaction processing using COMMIT and ROLLBACK, and explains how concurrency control helps prevent conflicts when multiple users access the database simultaneously.
 
 3.2 Concurrency Control 
 
