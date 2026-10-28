@@ -1,11 +1,12 @@
 MIT 8103: Advanced Database Systems
 Student Name: Falmata Ali Bukar
 Student ID: 301858689
-Selected Case Study: Hotel Reservation System
+Selected Organisation: Crescent View Hotel (Simulated Organisation)
+Case Study System: Hotel Reservation System
 
 Portfolio Overview:
 
-This portfolio demonstrates the practical application of advanced database concepts using a Hotel Reservation System as the selected case study. The system manages guest information, room details, reservations, payments, and services. The portfolio covers database design and modelling, SQL query processing and optimisation, transactions and concurrency, NoSQL data modelling using MongoDB, and distributed and cloud database concepts.
+Crescent View Hotel is a simulated hotel business used consistently throughout this MIT 8103 Advanced Database Systems continuous assessment portfolio. The Hotel Reservation System manages guest information, room records, bookings, and payment records. The portfolio covers database design, query optimisation, transactions and concurrency, NoSQL modelling with MongoDB, and a proposed distributed and cloud database design.
 
 Portfolio Activities and Technical Evidence
 
