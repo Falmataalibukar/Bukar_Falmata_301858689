@@ -1,7 +1,9 @@
 5.1 Introduction
 Distributed databases allow data to be stored and managed across multiple computers or locations while supporting access to the data as part of a database system. Cloud databases provide database services through cloud infrastructure, which can help organisations improve accessibility, scalability, and availability.
-For the Hotel Reservation System, distributed database concepts are relevant because hotel staff may need to access guest details, room availability, bookings, and payment records from different locations. This portfolio examines how replication, sharding, availability, and consistency could support the system.
-The discussion uses the existing Hotel Reservation System developed with MySQL and MongoDB as its case study.
+
+Crescent View Hotel is a simulated hotel business selected as the case study for this portfolio. It's a Hotel Reservation System that manages guest details, room availability, bookings, and payment records. Distributed database concepts are relevant because hotel staff may need to access this information from different locations.
+
+This portfolio examines how replication, sharding, availability, and consistency could support Crescent View Hotel as its data and service requirements grow. The discussion builds on the existing Hotel Reservation System developed using MySQL and MongoDB. Distributed replication, sharding, and cloud deployment are discussed as proposed approaches and were not implemented or experimentally tested in this portfolio.
 
 5.2 Proposed Distributed Database Architecture
 The Hotel Reservation System could use a distributed database architecture to support hotel operations across multiple branches. Each branch could access guest information, room availability, bookings, and payment records through a central database service or distributed database infrastructure.
