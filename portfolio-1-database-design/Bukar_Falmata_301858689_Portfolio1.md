@@ -2,7 +2,9 @@ PORTFOLIO 1: DATABASE DESIGN AND MODELLING
 
 1.1 Case Study Description
 
-The selected case study for this portfolio is a Hotel Reservation System. The system is designed to help a hotel manage guest information, room details, reservations, payments, and additional hotel services efficiently.
+Selected Organisation: Crescent View Hotel (Simulated Organisation)
+
+Crescent View Hotel is a simulated hotel business used as the case study for this MIT 8103 Advanced Database Systems portfolio. It's Hotel Reservation System that manages guest information, room details, bookings, and payment records. The database design identifies the main entities, their attributes, primary keys, foreign keys, and relationships to support the hotel's daily operations.
 
 The database will store information about guests, room types, available rooms, bookings, payments, hotel staff, services, and service charges. It will support important hotel operations such as registering guests, making reservations, assigning rooms, calculating accommodation costs, recording payments, and checking room availability.
 
